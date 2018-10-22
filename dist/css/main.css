@@ -1,4 +1,28 @@
-h1 {
-  color: pink; }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.header__top {
+  background-color: #F2F2F2;
+  padding: 1rem; }
+  .header__top__img {
+    width: 2rem; }
+  .header__top__caption {
+    font-size: .2rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: .2rem;
+    margin-left: 1rem; }
 
 /*# sourceMappingURL=main.css.map */
