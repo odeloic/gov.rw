@@ -5,3 +5,16 @@
         display: table;
     }
 }
+
+@mixin easeOut($s){
+  transition: $s ease-out;
+}
+@mixin ease($s){
+    transition:$s ease;
+}
+@mixin transDelay($s){
+    transition-delay: $s;
+}
+@mixin easeInOut($s){
+    transition:$s ease-in-out;
+}

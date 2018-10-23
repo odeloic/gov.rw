@@ -1,12 +1,64 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.line {
+  width: 80px;
+  height: 4px;
+  margin-bottom: 10px;
+  &.line-primary {
+    background: $color-primary;
+  }
+  &.line-secondary {
+    background: $color-secondary;
+  }
+  &.line-primary-darkest {
+    background: $color-primary--darkest;
+  }
+  &.line-secondary-darkest {
+    background: $color-secondary--darkest;
+  }
+}
+
+.primary {
+  color: $color-primary;
+}
+.primary-dark {
+  color: $color-primary--darker;
+}
+.primary-darkest {
+  color: $color-primary--darkest;
+}
+.secondary {
+  color: $color-secondary;
+}
+.secondary-dark {
+  color: $color-secondary--darker;
+}
+.secodary-darkest {
+  color: $color-secondary--darkest;
+}
+.white {
+  color: $color-white;
+}
+
+.grey-dark {
+  color: $color-gray--dark;
+}
+
+.title {
+  font-size: 35px;
+}
+
+.accent-yellow {
+  color: $color-accent;
 }
