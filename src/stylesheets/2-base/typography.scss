@@ -1,0 +1,22 @@
+h1 {
+  font-size: 27px;
+}
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 22px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-headings;
+}
+p,
+span,
+i,
+a {
+  font-size: 1.5rem;
+  font-family: $font-text;
+}
