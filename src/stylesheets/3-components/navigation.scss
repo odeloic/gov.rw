@@ -1,0 +1,12 @@
+.navigation {
+    @include flexTop;
+    border-bottom: .1px solid $color-gray--light;
+
+    &__logo {
+        padding: 2rem 3rem;
+
+        img {
+            width: 6rem;
+        }
+    }
+}
