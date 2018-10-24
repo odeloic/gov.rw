@@ -1,0 +1,63 @@
+.news-card {
+    display: flex;
+    align-content: flex-start;
+    position: relative;
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+
+    &:not(:last-child) {
+        border-bottom: .2px solid $color-gray--light;
+    }
+
+    &__thumb {
+        flex-basis: 40%;
+        padding-right: 3rem;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    &__description {
+        position: relative;
+    }
+
+    &__title {
+        font-family: $font-headings;
+        font-weight: 400;
+        color: $color-primary--darkest;
+        font-size: 1.8rem;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__excerpt {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        font-family: $font-text;
+    }
+
+    &__date {
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: $font-text;
+    }
+
+
+    &__label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        font-family: $font-text;
+        color: $color-white;
+        background-color: $color-primary;
+        padding: .3rem;
+        font-size: .5rem;
+    }
+
+
+}

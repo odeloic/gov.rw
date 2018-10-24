@@ -1,0 +1,40 @@
+.card {
+  padding: 3rem 4rem;
+
+
+  &__title {
+    font-size: 1.8rem;
+    font-family: $font-headings;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-family: $font-text;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &--secondary {
+    background-color: $color-primary--darker;
+    color: $color-white;
+  }
+
+  &--tertiary {
+    background-color: $color-secondary;
+    color: $color-white;
+  }
+
+  &--plain {
+    background-color: $color-gray--light;
+
+    .card__title {
+      color: $color-primary--darker;
+    }
+  }
+}
