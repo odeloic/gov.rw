@@ -1,0 +1,49 @@
+.navigation {
+  border-bottom: 0.1px solid $color-gray--light;
+
+  .nav-wrapper {
+    margin: auto 10%;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      transform: translateY(20px);
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      transform: translateY(20px);
+      li {
+        margin-right: 20px;
+        a {
+          font-size: 18px;
+          text-decoration: none;
+          color: $color-base;
+        }
+      }
+    }
+    .search-form {
+      transform: translateY(-25px);
+      form {
+        .input-grp {
+          display: flex;
+          padding: 20px;
+          input[type="text"] {
+            width: 250px;
+            height: 30px;
+            outline: none;
+          }
+          button[type="submit"] {
+            width: 50px;
+            background: $color-primary--darkest;
+          }
+        }
+      }
+    }
+  }
+}
