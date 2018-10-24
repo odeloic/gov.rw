@@ -13,60 +13,17 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-<<<<<<< HEAD
-.line {
-  width: 80px;
-  height: 4px;
-  margin-bottom: 10px; }
-  .line.line-primary {
-    background: #00a2e0; }
-
-.primary {
-  color: #00a2e0; }
-
-.white {
-  color: #ffffff; }
-
-.grey-dark {
-  color: #3c3c3c; }
-
-.title {
-  font-size: 35px; }
-=======
 .accent-yellow {
   color: #fbd400; }
 
 a {
   text-decoration: none;
   color: inherit; }
->>>>>>> elie
 
 .container {
   max-width: 98rem;
   margin: 0 auto; }
 
-<<<<<<< HEAD
-h1 {
-  font-size: 27px; }
-
-h2 {
-  font-size: 25px; }
-
-h3 {
-  font-size: 22px; }
-
-h1,
-h2,
-h3 {
-  font-family: "Merriweather", serif; }
-
-p,
-span,
-i,
-a {
-  font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif; }
-=======
 .heading-primary {
   font-family: "Merriweather", serif;
   font-weight: 700;
@@ -80,7 +37,6 @@ p {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   color: inherit; }
->>>>>>> elie
 
 .header__top {
   background-color: #f2f2f2;
@@ -149,43 +105,6 @@ p {
           width: 50px;
           background: #004560; }
 
-<<<<<<< HEAD
-.btn {
-  padding: 1rem 4rem;
-  border: none;
-  outline: none;
-  text-decoration: none; }
-  .btn.btn-lg {
-    padding: 1rem 6rem; }
-
-.btn-primary {
-  background: #00a2e0;
-  color: #ffffff;
-  -webkit-transition: 0.5s ease-out;
-  -o-transition: 0.5s ease-out;
-  transition: 0.5s ease-out; }
-  .btn-primary:hover {
-    background: #ffffff;
-    color: #00a2e0;
-    -webkit-transition: 0.5s ease-out;
-    -o-transition: 0.5s ease-out;
-    transition: 0.5s ease-out; }
-
-.btn-primary-darkest {
-  background: #004560;
-  color: #ffffff;
-  -webkit-transition: 0.5s ease-out;
-  -o-transition: 0.5s ease-out;
-  transition: 0.5s ease-out; }
-  .btn-primary-darkest:hover {
-    background: #ffffff;
-    color: #004560;
-    -webkit-transition: 0.5s ease-out;
-    -o-transition: 0.5s ease-out;
-    transition: 0.5s ease-out; }
-
-=======
->>>>>>> elie
 button[type="submit"] {
   display: grid;
   place-content: center;
@@ -204,25 +123,6 @@ button[type="submit"] {
   display: grid;
   place-content: center; }
 
-<<<<<<< HEAD
-.link {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 17px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 10px auto; }
-  .link span {
-    margin-right: 10px; }
-  .link .btn-more {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px); }
-    .link .btn-more i.fa {
-      font-size: 18px; }
-=======
 a {
   text-decoration: none;
   color: inherit; }
@@ -282,7 +182,6 @@ a {
       justify-content: center; }
       .link--with-icon--white span.icon i {
         font-size: .8rem; }
->>>>>>> elie
 
 .search-form {
   margin-top: 4rem; }
@@ -312,21 +211,6 @@ a {
     vertical-align: top; }
 
 .card {
-<<<<<<< HEAD
-  padding: 15px; }
-
-.card-primary {
-  background: #00a2e0; }
-
-.card-primary-darkest {
-  background: #004560; }
-
-.card-secondary {
-  background: #15613a; }
-
-.card-grey {
-  background: #b1b1b1; }
-=======
   padding: 3rem 4rem; }
   .card__title {
     font-size: 1.8rem;
@@ -419,7 +303,6 @@ a {
     background-color: #00a2e0;
     padding: .3rem;
     font-size: .5rem; }
->>>>>>> elie
 
 #hero-slider {
   height: 70vh;
@@ -488,59 +371,10 @@ a {
       -ms-flex-preferred-size: 65%;
       flex-basis: 65%;
       margin-right: 20px; }
-<<<<<<< HEAD
-      #quick-access .gov-portal .portal-main h1 {
-        margin-bottom: 10px; }
-    #quick-access .gov-portal aside {
-      -webkit-flex-basis: 35%;
-      -ms-flex-preferred-size: 35%;
-      flex-basis: 35%; }
-      #quick-access .gov-portal aside h2 {
-        margin: 10px auto; }
-
-#gov-news {
-  margin: 20px 10%; }
-  #gov-news .news-header {
-    margin: 10px auto; }
-  #gov-news .news-container {
-    position: relative; }
-    #gov-news .news-container a.btn.btn-primary {
-      position: relative;
-      left: 50%; }
-    #gov-news .news-container .news-item {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      margin: 20px auto; }
-      #gov-news .news-container .news-item .news-img {
-        -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-        position: relative;
-        height: 100%;
-        margin-right: 15px; }
-        #gov-news .news-container .news-item .news-img img {
-          width: 100%;
-          height: 100%; }
-      #gov-news .news-container .news-item .news-desc {
-        -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-        padding: 20px; }
-        #gov-news .news-container .news-item .news-desc .title {
-          display: block;
-          margin: 10px auto; }
-        #gov-news .news-container .news-item .news-desc .description .date {
-          display: inline-block;
-          margin: 10px auto;
-          font-weight: 500; }
-=======
 
 #gov-news {
   margin: 20px 10%; }
   #gov-news .news-container {
     position: relative; }
->>>>>>> elie
 
 /*# sourceMappingURL=main.css.map */

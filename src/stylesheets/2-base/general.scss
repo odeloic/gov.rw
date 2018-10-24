@@ -15,17 +15,6 @@ html {
   width: 80px;
   height: 4px;
   margin-bottom: 10px;
-<<<<<<< HEAD
-  &.line-primary {
-    background: $color-primary;
-  }
-  &.line-secondary {
-    background: $color-secondary;
-  }
-  &.line-primary-darkest {
-    background: $color-primary--darkest;
-  }
-=======
 
   &.line-primary {
     background: $color-primary;
@@ -39,7 +28,6 @@ html {
     background: $color-primary--darkest;
   }
 
->>>>>>> elie
   &.line-secondary-darkest {
     background: $color-secondary--darkest;
   }
@@ -48,23 +36,6 @@ html {
 .primary {
   color: $color-primary;
 }
-<<<<<<< HEAD
-.primary-dark {
-  color: $color-primary--darker;
-}
-.primary-darkest {
-  color: $color-primary--darkest;
-}
-.secondary {
-  color: $color-secondary;
-}
-.secondary-dark {
-  color: $color-secondary--darker;
-}
-.secodary-darkest {
-  color: $color-secondary--darkest;
-}
-=======
 
 .primary-dark {
   color: $color-primary--darker;
@@ -86,7 +57,6 @@ html {
   color: $color-secondary--darkest;
 }
 
->>>>>>> elie
 .white {
   color: $color-white;
 }
@@ -102,12 +72,9 @@ html {
 .accent-yellow {
   color: $color-accent;
 }
-<<<<<<< HEAD
-=======
 
 
 a {
   text-decoration: none;
   color: inherit;
 }
->>>>>>> elie

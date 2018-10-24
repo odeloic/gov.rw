@@ -6,19 +6,6 @@
     }
 }
 
-<<<<<<< HEAD
-@mixin easeOut($s){
-  transition: $s ease-out;
-}
-@mixin ease($s){
-    transition:$s ease;
-}
-@mixin transDelay($s){
-    transition-delay: $s;
-}
-@mixin easeInOut($s){
-    transition:$s ease-in-out;
-=======
 @mixin linkIcon($color) {
     span.text {
         margin-right: .5rem;
@@ -57,5 +44,4 @@
 
 @mixin easeInOut($s) {
     transition: $s ease-in-out;
->>>>>>> elie
 }

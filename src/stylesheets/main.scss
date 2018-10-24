@@ -12,42 +12,24 @@
 @import "3-components/link.scss";
 @import "3-components/search-form.scss";
 @import "3-components/card.scss";
-<<<<<<< HEAD
-=======
 @import "3-components/section-header";
 @import "3-components/news-card";
->>>>>>> elie
 
 // Hero section
 #hero-slider {
   height: 70vh;
   position: relative;
-<<<<<<< HEAD
-=======
 
->>>>>>> elie
   .slide-wrapper {
     position: relative;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
-=======
 
->>>>>>> elie
     .slide {
       width: 100%;
       height: 100%;
       position: absolute;
       z-index: -30;
-<<<<<<< HEAD
-      &.is-active {
-        z-index: 30;
-      }
-      &:nth-of-type(1) {
-        background: url(https://www.newtimes.co.rw/sites/default/files/styles/mystyle/public/main/articles/2016/07/26/1469556501kcc.jpg?itok=7JxFkDed)
-          no-repeat center/cover;
-      }
-=======
 
       &.is-active {
         z-index: 30;
@@ -57,7 +39,6 @@
         background: url(https://www.newtimes.co.rw/sites/default/files/styles/mystyle/public/main/articles/2016/07/26/1469556501kcc.jpg?itok=7JxFkDed) no-repeat center/cover;
       }
 
->>>>>>> elie
       &-caption {
         position: relative;
         top: 30%;
@@ -71,10 +52,7 @@
           font-size: 28px;
           margin-bottom: 20px;
         }
-<<<<<<< HEAD
-=======
 
->>>>>>> elie
         p {
           font-size: 18px;
           display: inline-block;
@@ -83,23 +61,13 @@
       }
     }
   }
-<<<<<<< HEAD
-=======
 
->>>>>>> elie
   .slide-controls {
     position: fixed;
     bottom: 10%;
     right: 30%;
     display: flex;
     z-index: 80;
-<<<<<<< HEAD
-    .control {
-      margin-right: 10px;
-      input[type="radio"] {
-        display: none;
-      }
-=======
 
     .control {
       margin-right: 10px;
@@ -108,7 +76,6 @@
         display: none;
       }
 
->>>>>>> elie
       label {
         width: 20px;
         height: 20px;
@@ -120,24 +87,13 @@
 
 #quick-access {
   margin: 80px 10%;
-<<<<<<< HEAD
-=======
 
->>>>>>> elie
   .access-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
     margin: 20px auto;
   }
-<<<<<<< HEAD
-  .gov-portal {
-    display: flex;
-    margin: 150px auto;
-    .portal-main {
-      flex-basis: 65%;
-      margin-right: 20px;
-=======
 
   .gov-portal {
     display: flex;
@@ -147,20 +103,14 @@
       flex-basis: 65%;
       margin-right: 20px;
 
->>>>>>> elie
       h1 {
         margin-bottom: 10px;
       }
     }
-<<<<<<< HEAD
-    aside {
-      flex-basis: 35%;
-=======
 
     aside {
       flex-basis: 35%;
 
->>>>>>> elie
       h2 {
         margin: 10px auto;
       }
@@ -170,13 +120,6 @@
 
 #gov-news {
   margin: 20px 10%;
-<<<<<<< HEAD
-  .news-header {
-    margin: 10px auto;
-  }
-  .news-container {
-    position: relative;
-=======
 
   .news-header {
     margin: 10px auto;
@@ -185,40 +128,27 @@
   .news-container {
     position: relative;
 
->>>>>>> elie
     a.btn.btn-primary {
       position: relative;
       left: 50%;
     }
-<<<<<<< HEAD
-    .news-item {
-      display: flex;
-      margin: 20px auto;
-=======
 
     .news-item {
       display: flex;
       margin: 20px auto;
 
->>>>>>> elie
       .news-img {
         flex-basis: 50%;
         position: relative;
         height: 100%;
         margin-right: 15px;
-<<<<<<< HEAD
-=======
 
->>>>>>> elie
         img {
           width: 100%;
           height: 100%;
         }
       }
-<<<<<<< HEAD
-=======
 
->>>>>>> elie
       .news-desc {
         flex-basis: 50%;
         padding: 20px;
@@ -227,10 +157,7 @@
           display: block;
           margin: 10px auto;
         }
-<<<<<<< HEAD
-=======
 
->>>>>>> elie
         .description {
           .date {
             display: inline-block;
@@ -241,8 +168,4 @@
       }
     }
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> elie
