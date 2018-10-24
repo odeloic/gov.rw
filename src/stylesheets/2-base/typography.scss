@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1 {
   font-size: 27px;
 }
@@ -20,3 +21,39 @@ a {
   font-size: 1.5rem;
   font-family: $font-text;
 }
+=======
+.heading-primary {
+  font-family: $font-headings;
+  font-weight: 700;
+  color: $color-base;
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+
+}
+
+.heading-secondary {
+  font-family: $font-headings-light;
+  font-weight: 300;
+  color: $color-primary;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.heading-tertiary {
+  font-family: $font-headings;
+  font-weight: 400;
+  color: $color-base;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+
+}
+
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-family: $font-text;
+  font-weight: 300;
+  color: inherit;
+}
+>>>>>>> elie
