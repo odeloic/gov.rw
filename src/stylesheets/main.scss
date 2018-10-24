@@ -14,6 +14,7 @@
 @import "3-components/card.scss";
 @import "3-components/section-header";
 @import "3-components/news-card";
+@import "3-components/footer.scss";
 
 // Hero section
 #hero-slider {
@@ -36,7 +37,8 @@
       }
 
       &:nth-of-type(1) {
-        background: url(https://www.newtimes.co.rw/sites/default/files/styles/mystyle/public/main/articles/2016/07/26/1469556501kcc.jpg?itok=7JxFkDed) no-repeat center/cover;
+        background: url(https://www.newtimes.co.rw/sites/default/files/styles/mystyle/public/main/articles/2016/07/26/1469556501kcc.jpg?itok=7JxFkDed)
+          no-repeat center/cover;
       }
 
       &-caption {
@@ -168,4 +170,62 @@
       }
     }
   }
+}
+
+//Services
+#services {
+  margin-top: 20px;
+  .service {
+    margin: 20px auto;
+    border-bottom: 1px solid $color-gray;
+    padding-bottom: 15px;
+    .service-heading {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+  }
+}
+//Agencies
+#agencies {
+  margin-top: 20px;
+  .agency {
+    margin: 20px auto;
+    border-bottom: 1px solid $color-gray;
+    padding-bottom: 15px;
+    .agency-heading {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+//Link to Irembo Website
+.irembo {
+  background: $color-primary;
+  padding: 40px auto;
+  display: grid;
+  place-content: center;
+  height: 20vh;
+  .underlined {
+    color: $color-white;
+    text-decoration: underline;
+    font-size: 1.2rem;
+  }
+}
+
+//Government page section...
+#gov-info {
+  margin: 30px auto;
+}
+
+#gov-detailed {
+  margin: 30px auto;
+  .detail-item {
+    margin: 20px auto;
+  }
+}
+
+.social-share {
+  position: relative;
+  margin: 20px 20%;
 }
