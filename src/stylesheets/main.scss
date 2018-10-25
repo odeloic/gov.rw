@@ -1,3 +1,10 @@
+// libraries
+@import "../../node_modules/bulma/sass/utilities/_all";
+@import "../../node_modules/bulma/sass/elements/container";
+@import "../../node_modules/bulma/sass/layout/section";
+@import "../../node_modules/bulma/sass/components/level";
+@import "../../node_modules/bulma/sass/grid/columns";
+@import "../../node_modules/bulma/sass/grid/_all";
 // Base
 @import "2-base/variables";
 @import "2-base/mixins";
@@ -15,6 +22,7 @@
 @import "3-components/section-header";
 @import "3-components/news-card";
 @import "3-components/footer.scss";
+@import "3-components/icons-list";
 
 // Hero section
 
