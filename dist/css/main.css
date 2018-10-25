@@ -13,6 +13,29 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+<<<<<<< HEAD
+=======
+.line {
+  width: 80px;
+  height: 4px;
+  margin-bottom: 10px; }
+  .line.line-accent {
+    background: #fbd400; }
+
+.primary {
+  color: #00a2e0; }
+
+.white {
+  color: #ffffff; }
+
+.title-alt {
+  font-size: 20px; }
+
+.subtitle-alt {
+  font-size: 18px;
+  font-weight: 400; }
+
+>>>>>>> 5e289babdf04583967bcf902142aea45d94a6677
 .accent-yellow {
   color: #fbd400; }
 
@@ -20,6 +43,17 @@ a {
   text-decoration: none;
   color: inherit; }
 
+<<<<<<< HEAD
+=======
+.paragraph-1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px; }
+
+.paragraph-2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px; }
+
+>>>>>>> 5e289babdf04583967bcf902142aea45d94a6677
 .container {
   max-width: 98rem;
   margin: 0 auto; }
@@ -183,6 +217,31 @@ a {
       .link--with-icon--white span.icon i {
         font-size: .8rem; }
 
+<<<<<<< HEAD
+=======
+.collection {
+  list-style: none;
+  margin-right: 30px;
+  margin-left: 30px; }
+  .collection__item {
+    padding: 10px;
+    border: 1px solid #b1b1b1; }
+
+.social-link {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #1c1c1c;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  display: grid;
+  place-content: center; }
+  .social-link a {
+    display: grid;
+    place-content: center; }
+    .social-link a i.fa {
+      font-size: 22px; }
+
+>>>>>>> 5e289babdf04583967bcf902142aea45d94a6677
 .search-form {
   margin-top: 4rem; }
   .search-form__input, .search-form__button, .search-form__input:focus, .search-form__button:focus {
@@ -191,7 +250,11 @@ a {
     background-color: transparent;
     border: 1px solid #004560;
     border-radius: 1px;
+<<<<<<< HEAD
     padding: .8rem 2.5rem;
+=======
+    padding: 0.8rem 5.5rem;
+>>>>>>> 5e289babdf04583967bcf902142aea45d94a6677
     font-weight: 400;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 1.1rem;
@@ -199,9 +262,15 @@ a {
   .search-form__input::-webkit-input-placeholder {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 700;
+<<<<<<< HEAD
     font-size: .8rem; }
   .search-form__button {
     padding: .8rem 2.5rem;
+=======
+    font-size: 0.8rem; }
+  .search-form__button {
+    padding: 0.8rem 2.5rem;
+>>>>>>> 5e289babdf04583967bcf902142aea45d94a6677
     background-color: #004560;
     border: none;
     color: #ffffff;
@@ -235,6 +304,44 @@ a {
     .card--plain .card__title {
       color: #016c95; }
 
+<<<<<<< HEAD
+=======
+.study-cases {
+  margin: 20px auto; }
+  .study-cases__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; }
+  .study-cases__item {
+    position: relative;
+    height: 250px; }
+    .study-cases__item img {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+  .study-cases__caption {
+    position: absolute;
+    background: #00a2e0;
+    padding: 20px;
+    bottom: 0;
+    height: 50%;
+    width: 100%; }
+
+.agencies-alt {
+  margin: 30px auto; }
+  .agencies-alt .agency {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .agencies-alt .agency img {
+      position: relative;
+      width: 100%;
+      height: 150px; }
+    .agencies-alt .agency__caption {
+      height: 50%;
+      width: 100%; }
+
+>>>>>>> 5e289babdf04583967bcf902142aea45d94a6677
 .section-header {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
@@ -304,6 +411,42 @@ a {
     padding: .3rem;
     font-size: .5rem; }
 
+<<<<<<< HEAD
+=======
+#quick-links {
+  margin-bottom: 20px;
+  background: rgba(21, 97, 58, 0.5) url(http://www.minaffet.gov.rw/fileadmin/_processed_/csm_coat-139bf_01_8e7d36d63b.png) no-repeat center/cover; }
+  #quick-links .wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background: rgba(0, 69, 96, 0.7); }
+    #quick-links .wrapper .quick-links__item ul li a {
+      color: #ffffff; }
+    #quick-links .wrapper .quick-links__collection {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px; }
+    #quick-links .wrapper .quick-links__social {
+      margin-right: -10%; }
+      #quick-links .wrapper .quick-links__social h3 {
+        margin: 10px 0; }
+      #quick-links .wrapper .quick-links__social .social-links {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        #quick-links .wrapper .quick-links__social .social-links__item {
+          margin-right: 20px;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          border: 1px solid #ffffff;
+          display: grid;
+          place-content: center; }
+
+>>>>>>> 5e289babdf04583967bcf902142aea45d94a6677
 #hero-slider {
   height: 70vh;
   position: relative; }
@@ -377,4 +520,50 @@ a {
   #gov-news .news-container {
     position: relative; }
 
+<<<<<<< HEAD
+=======
+#services {
+  margin-top: 20px; }
+  #services .service {
+    margin: 20px auto;
+    border-bottom: 1px solid #b1b1b1;
+    padding-bottom: 15px; }
+    #services .service .service-heading {
+      font-size: 1.3rem;
+      margin-bottom: 8px; }
+
+#agencies {
+  margin-top: 20px; }
+  #agencies .agency {
+    margin: 20px auto;
+    border-bottom: 1px solid #b1b1b1;
+    padding-bottom: 15px; }
+    #agencies .agency .agency-heading {
+      font-size: 1.3rem;
+      margin-bottom: 8px; }
+
+.irembo {
+  background: #00a2e0;
+  padding: 40px auto;
+  display: grid;
+  place-content: center;
+  height: 20vh; }
+  .irembo .underlined {
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 1.2rem; }
+
+#gov-info {
+  margin: 30px auto; }
+
+#gov-detailed {
+  margin: 30px auto; }
+  #gov-detailed .detail-item {
+    margin: 20px auto; }
+
+.social-share {
+  position: relative;
+  margin: 20px 20%; }
+
+>>>>>>> 5e289babdf04583967bcf902142aea45d94a6677
 /*# sourceMappingURL=main.css.map */
