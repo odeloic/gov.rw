@@ -1,0 +1,48 @@
+#quick-links {
+  margin-bottom: 20px;
+  background: rgba($color-secondary, 0.5)
+    url(http://www.minaffet.gov.rw/fileadmin/_processed_/csm_coat-139bf_01_8e7d36d63b.png)
+    no-repeat center/cover;
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background: rgba($color-primary--darkest, 0.7);
+
+    .quick-links {
+      &__item {
+        ul {
+          li {
+            a {
+              color: $color-white;
+            }
+          }
+        }
+      }
+      &__collection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+      }
+      &__social {
+        margin-right: -10%;
+        h3 {
+          margin: 10px 0;
+        }
+        .social-links {
+          display: flex;
+          &__item {
+            margin-right: 20px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 1px solid $color-white;
+            display: grid;
+            place-content: center;
+          }
+        }
+      }
+    }
+  }
+}

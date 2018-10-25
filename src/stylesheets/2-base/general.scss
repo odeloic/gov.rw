@@ -31,6 +31,9 @@ html {
   &.line-secondary-darkest {
     background: $color-secondary--darkest;
   }
+  &.line-accent {
+    background: $color-accent;
+  }
 }
 
 .primary {
@@ -65,16 +68,28 @@ html {
   color: $color-gray--dark;
 }
 
-.title {
-  font-size: 35px;
+.title-alt {
+  font-size: 20px;
+}
+.subtitle-alt {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .accent-yellow {
   color: $color-accent;
 }
 
-
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.paragraph-1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.paragraph-2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
