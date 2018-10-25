@@ -1,50 +1,45 @@
 .btn {
-  padding: 1rem 4rem;
-  border: none;
-  outline: none;
-  text-decoration: none;
-  &.btn-lg {
-    padding: 1rem 6rem;
+  padding: 2rem 3rem;
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all .3s ease;
+
+  &::focus {
+    outline: none;
+  }
+
+  &--submit {
+    background-color: $color-primary--darker;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-primary--darkest;
+    }
   }
 }
+
 .btn-primary {
   background: $color-primary;
   color: $color-white;
   @include easeOut(0.5s);
+
   &:hover {
     background: $color-white;
     color: $color-primary;
     @include easeOut(0.5s);
   }
 }
+
 .btn-primary-darkest {
   background: $color-primary--darkest;
   color: $color-white;
   @include easeOut(0.5s);
+
   &:hover {
     background: $color-white;
     color: $color-primary--darkest;
     @include easeOut(0.5s);
   }
-}
-
-button[type="submit"] {
-  display: grid;
-  place-content: center;
-  border: none;
-  outline: none;
-  i.fa {
-    color: $color-white;
-  }
-}
-
-.btn-more {
-  width: 30px;
-  height: 30px;
-  border: 1px solid $color-white;
-  border-radius: 50%;
-  text-decoration: none;
-  color: $color-white;
-  display: grid;
-  place-content: center;
 }

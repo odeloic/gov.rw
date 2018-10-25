@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Government of Rwanda</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+	 crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Source+Sans+Pro:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -18,79 +19,121 @@
 			<span class="header__top__caption">Official Website the Government of Rwanda</span>
 		</div>
 		<nav class="navigation">
-			<div class="nav-wrapper">
-				<div class="logo">
-					<a href="">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Coat_of_arms_of_Rwanda.svg/250px-Coat_of_arms_of_Rwanda.svg.png"
-						 alt="">
-					</a>
-				</div>
-				<ul class="menu">
-					<li><a href="">Government</a></li>
-					<li><a href="">Discover Rwanda</a></li>
-					<li><a href="">Services</a></li>
-					<li><a href="">Press</a></li>
-				</ul>
-				<div class="search-form">
-					<form action="" method="post">
-						<div class="input-grp">
-							<input type="text" name="search" id="search" class="search-form__input">
-							<button type="submit" class="search-form__button">
-								<i class="fa fa-search"></i>
-							</button>
-						</div>
-					</form>
-				</div>
+			<div class="languages">
+				<span>Select language: </span>
+				<span class="active">EN</span>
+				<span>FR</span>
+				<span>KN</span>
 			</div>
+			<div class="site-logo">
+				<a href="#">
+					<img src="./img/emblem.svg" alt="" class="site-logo__img">
+				</a>
+			</div><!-- site-logo -->
 
-		</nav>
+			<ul class="menu">
+				<li class="menu__item menu__item--with-submenu">
+					<a href="#" class="menu__link">Government</a>
+					<span class="menu__link__icon"><i class="fas fa-angle-down"></i></span>
 
-	</header>
-	<section id="hero-slider">
-		<div class="slide-wrapper">
-			<div class="slide is-active">
-				<div class="slide-caption">
-					<h1>Welcome to Rwanda</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde deserunt quam aliquid ullam cupiditate
-						totam accusantium veritatis velit vero.</p>
-					<a href="" class="link">
-						<span>Discover Rwanda</span>
-						<div class="btn-more">
-							<i class="fa fa-arrow-right"></i>
-						</div>
+					<ul class="submenu">
+						<li class="submenu__item">
+							<a href="#" class="menu__link">President's Office</a>
+						</li><!-- submenu item -->
 
-					</a>
-				</div>
+						<li class="submenu__item">
+							<a href="#" class="menu__link">Prime Minister's Office</a>
+						</li><!-- submenu item -->
+
+						<li class="submenu__item">
+							<a href="#" class="menu__link">Ministries</a>
+						</li><!-- submenu item -->
+
+						<li class="submenu__item">
+							<a href="#" class="menu__link">Government Agencies</a>
+						</li><!-- submenu item -->
+					</ul><!-- submenu-->
+
+				</li><!-- menu__item -->
+
+				<li class="menu__item menu__item--with-submenu">
+					<a href="#" class="menu__link">Rwanda</a>
+					<span class="menu__link__icon"><i class="fas fa-angle-down"></i></span>
+
+					<ul class="submenu">
+						<li class="submenu__item">
+							<a href="#" class="menu__link">History</a>
+						</li><!-- submenu item -->
+
+						<li class="submenu__item">
+							<a href="#" class="menu__link">Living in Rwanda</a>
+						</li><!-- submenu item -->
+
+						<li class="submenu__item">
+							<a href="#" class="menu__link">Society and Culture</a>
+						</li><!-- submenu item -->
+
+					</ul><!-- submenu-->
+				</li><!-- menu__item -->
+
+				<li class="menu__item">
+					<a href="#" class="menu__link">Invest in Rwanda</a>
+				</li><!-- menu__item -->
+
+				<li class="menu__item">
+					<a href="#" class="menu__link">Services</a>
+				</li><!-- menu__item -->
+
+				<li class="menu__item menu__item--with-submenu">
+					<a href="#" class="menu__link">Press</a>
+					<span class="menu__link__icon"><i class="fas fa-angle-down"></i></span>
+
+					<ul class="submenu">
+						<li class="submenu__item">
+							<a href="#" class="menu__link">Press Releases</a>
+						</li><!-- submenu item -->
+
+						<li class="submenu__item">
+							<a href="#" class="menu__link">Government News</a>
+						</li><!-- submenu item -->
+
+						<li class="submenu__item">
+							<a href="#" class="menu__link">Cabinet Resolutions</a>
+						</li><!-- submenu item -->
+
+					</ul><!-- submenu-->
+
+				</li><!-- menu__item -->
+
+			</ul><!-- menu -->
+
+			<form action="/" class="form search-form" method="GET">
+				<input type="text" name="q" class="search-form__input" placeholder="Search gov.rw...">
+				<input type="submit" value="Search" class="btn btn--submit search-form__submit">
+
+			</form>
+			</div><!-- search form -->
+
+		</nav><!-- navigation -->
+	</header><!-- header -->
+
+	<div class="hero-slider">
+		<div class="hero-slider__slide">
+			<img src="./img/hero-1.jpg" alt="" class="hero-slider__slide__img">
+			<div class="hero-slider__caption">
+				<h3 class="hero-slider__title">Welcome to Rwanda</h3>
+				<p class="hero-slider__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde deserunt
+					quam aliquid ullam cupiditate
+					totam accusantium veritatis velit vero.</p>
+				<a href="#" class="link link--with-icon link--with-icon--white">
+					<span class="text">Learn More</span>
+					<span class="icon white">
+						<i class="fa fa-arrow-right"></i>
+					</span>
+				</a>
 			</div>
-			<div class="slide">
-				<div class="slide-caption"></div>
-			</div>
-			<div class="slide">
-				<div class="slide-caption"></div>
-			</div>
-			<div class="slide">
-				<div class="slide-caption"></div>
-			</div>
-		</div>
-		<div class="slide-controls">
-			<div class="control">
-				<input type="radio" name="control" id="control-1">
-				<label for="control-1"></label>
-			</div>
-			<div class="control">
-				<input type="radio" name="control" id="control-2">
-				<label for="control-2"></label>
-			</div>
-			<div class="control">
-				<input type="radio" name="control" id="control-3">
-				<label for="control-3"></label>
-			</div>
-			<div class="control">
-				<input type="radio" name="control" id="control-4">
-				<label for="control-4"></label>
-			</div>
-		</div>
-	</section>
+		</div><!-- hero slide-->
+	</div><!-- hero-slider -->
 	<section class="section is-medium">
 		<div class="container">
 			<h2 class="section-header">
@@ -279,7 +322,7 @@
 							<ul class="footer__navlist">
 								<li><a href="">Press Releases</a></li>
 								<li><a href="">Government News</a></li>
-								<li><a href="">Public Announcement</a></li>
+								<li><a href="">Cabinet Resolutions</a></li>
 							</ul>
 
 						</div>
@@ -288,9 +331,10 @@
 				<div class="level-right">
 					<div class="icons-list icons-list--horizontal white">
 						<h3 class="icons-list__handle">Connect with GovRwanda</h3>
-						<span class="icons-list__icon"><i class="fa fa-facebook"></i></span>
-						<span class="icons-list__icon"><i class="fa fa-twitter"></i></span>
-						<span class="icons-list__icon"><i class="fa fa-flickr"></i></span>
+						<span class="icons-list__icon"><i class="fab fa-facebook-f"></i></span>
+						<span class="icons-list__icon"><i class="fab fa-twitter"></i></span>
+						<span class="icons-list__icon"><i class="fab fa-instagram"></i></span>
+						<span class="icons-list__icon"><i class="fab fa-flickr"></i></span>
 					</div>
 				</div>
 

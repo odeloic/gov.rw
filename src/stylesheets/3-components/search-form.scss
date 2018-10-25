@@ -1,12 +1,5 @@
 .search-form {
-    margin-top: 4rem;
 
-    &__input,
-    &__button,
-    &__input:focus,
-    &__button:focus {
-        outline: none;
-    }
 
     &__input {
         background-color: transparent;
@@ -17,6 +10,7 @@
         font-family: $font-text;
         font-size: 1.1rem;
         color: $color-gray--dark;
+        width: 70%;
     }
 
     &__input::-webkit-input-placeholder {
@@ -25,14 +19,5 @@
         font-size: 0.8rem;
     }
 
-    &__button {
-        padding: 0.8rem 2.5rem;
-        background-color: $color-primary--darkest;
-        border: none;
-        color: $color-white;
-        font-size: 1.3rem;
-        margin-left: -1rem;
-        cursor: pointer;
-        vertical-align: top;
-    }
+
 }
