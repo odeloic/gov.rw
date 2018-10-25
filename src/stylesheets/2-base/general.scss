@@ -31,12 +31,10 @@ html {
   &.line-secondary-darkest {
     background: $color-secondary--darkest;
   }
-<<<<<<< HEAD
-=======
+
   &.line-accent {
     background: $color-accent;
   }
->>>>>>> 5e289babdf04583967bcf902142aea45d94a6677
 }
 
 .primary {
@@ -71,31 +69,26 @@ html {
   color: $color-gray--dark;
 }
 
-<<<<<<< HEAD
 .title {
   font-size: 35px;
-=======
-.title-alt {
-  font-size: 20px;
-}
-.subtitle-alt {
-  font-size: 18px;
-  font-weight: 400;
->>>>>>> 5e289babdf04583967bcf902142aea45d94a6677
-}
 
-.accent-yellow {
-  color: $color-accent;
-}
+  .title-alt {
+    font-size: 20px;
+  }
 
-<<<<<<< HEAD
+  .subtitle-alt {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .accent-yellow {
+    color: $color-accent;
+  }
+}
 
 a {
   text-decoration: none;
   color: inherit;
-}
-=======
-a {
   text-decoration: none;
   color: inherit;
 }
@@ -104,8 +97,8 @@ a {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
+
 .paragraph-2 {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
->>>>>>> 5e289babdf04583967bcf902142aea45d94a6677

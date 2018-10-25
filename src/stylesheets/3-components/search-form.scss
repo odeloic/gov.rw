@@ -1,5 +1,4 @@
 .search-form {
-<<<<<<< HEAD
     margin-top: 4rem;
 
     &__input,
@@ -13,7 +12,7 @@
         background-color: transparent;
         border: 1px solid $color-primary--darkest;
         border-radius: 1px;
-        padding: .8rem 2.5rem;
+        padding: 0.8rem 5.5rem;
         font-weight: 400;
         font-family: $font-text;
         font-size: 1.1rem;
@@ -23,12 +22,11 @@
     &__input::-webkit-input-placeholder {
         font-family: $font-text;
         font-weight: 700;
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
-
     &__button {
-        padding: .8rem 2.5rem;
+        padding: 0.8rem 2.5rem;
         background-color: $color-primary--darkest;
         border: none;
         color: $color-white;
@@ -37,44 +35,4 @@
         cursor: pointer;
         vertical-align: top;
     }
-
 }
-=======
-  margin-top: 4rem;
-
-  &__input,
-  &__button,
-  &__input:focus,
-  &__button:focus {
-    outline: none;
-  }
-
-  &__input {
-    background-color: transparent;
-    border: 1px solid $color-primary--darkest;
-    border-radius: 1px;
-    padding: 0.8rem 5.5rem;
-    font-weight: 400;
-    font-family: $font-text;
-    font-size: 1.1rem;
-    color: $color-gray--dark;
-  }
-
-  &__input::-webkit-input-placeholder {
-    font-family: $font-text;
-    font-weight: 700;
-    font-size: 0.8rem;
-  }
-
-  &__button {
-    padding: 0.8rem 2.5rem;
-    background-color: $color-primary--darkest;
-    border: none;
-    color: $color-white;
-    font-size: 1.3rem;
-    margin-left: -1rem;
-    cursor: pointer;
-    vertical-align: top;
-  }
-}
->>>>>>> 5e289babdf04583967bcf902142aea45d94a6677

@@ -61,15 +61,13 @@ a {
 
   //     }
   //   }
-<<<<<<< HEAD
-}
-=======
 }
 
 .collection {
   list-style: none;
   margin-right: 30px;
   margin-left: 30px;
+
   &__item {
     padding: 10px;
     border: 1px solid $color-gray;
@@ -84,12 +82,13 @@ a {
   margin-bottom: 10px;
   display: grid;
   place-content: center;
+
   a {
     display: grid;
     place-content: center;
+
     i.fa {
       font-size: 22px;
     }
   }
 }
->>>>>>> 5e289babdf04583967bcf902142aea45d94a6677
