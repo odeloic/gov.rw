@@ -1,0 +1,38 @@
+.entity {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+
+    &__title {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: $color-primary;
+
+        h3 {
+            font-family: $font-headings;
+            font-size: 1.4rem;
+            margin-right: 1rem;
+
+        }
+
+        .icon {
+            display: inline-block;
+
+            i {
+                font-size: .5rem;
+            }
+        }
+    }
+
+    &__description {
+        color: $color-gray;
+        font-size: 1.5rem;
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px solid $color-gray--light;
+    }
+}

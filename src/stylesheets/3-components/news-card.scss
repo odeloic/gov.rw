@@ -1,6 +1,7 @@
 .news-card {
     display: flex;
     align-content: flex-start;
+    flex-wrap: wrap;
     position: relative;
     margin-bottom: 4rem;
     padding-bottom: 3rem;
@@ -10,7 +11,8 @@
     }
 
     &__thumb {
-        flex-basis: 40%;
+
+        flex-basis: 30rem;
         padding-right: 3rem;
 
         img {
@@ -22,6 +24,9 @@
 
     &__description {
         position: relative;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 60%;
     }
 
     &__title {
@@ -34,10 +39,12 @@
     }
 
     &__excerpt {
-        font-size: 1.4rem;
-        line-height: 1.5;
+        font-size: 1.6rem;
+        line-height: 1.6;
         margin-bottom: 1rem;
         font-family: $font-text;
+        font-weight: 300;
+        width: 60%;
     }
 
     &__date {

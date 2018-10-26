@@ -1,0 +1,28 @@
+.breadcrumb {
+    font-size: 1.2rem;
+    font-family: $font-text;
+    font-weight: 400;
+    color: $color-base;
+
+    ul {
+        list-style-type: none;
+
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    li:not(:last-child) {
+        margin-right: .5rem;
+    }
+
+    li+li::before {
+        color: #b5b5b5;
+        content: "\0002f";
+    }
+
+    li.active {
+        color: $color-primary;
+    }
+}

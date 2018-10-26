@@ -5,11 +5,13 @@
 @import "../../node_modules/bulma/sass/components/level";
 @import "../../node_modules/bulma/sass/grid/columns";
 @import "../../node_modules/bulma/sass/grid/_all";
+
 // Base
 @import "2-base/variables";
 @import "2-base/mixins";
 @import "2-base/general";
 @import "2-base/layout";
+@import "2-base/page";
 // Typography
 @import "2-base/typography";
 // components
@@ -29,6 +31,12 @@
 @import "3-components/form";
 @import "3-components/image";
 @import "3-components/hero-slider";
+@import "3-components/breadcrumb.scss";
+@import "3-components/generic-content";
+@import "3-components/side-nav";
+@import "3-components/study-case";
+@import "3-components/entity";
+@import "3-components/cta";
 
 
 //Services
@@ -75,19 +83,6 @@
     color: $color-white;
     text-decoration: underline;
     font-size: 1.2rem;
-  }
-}
-
-//Government page section...
-#gov-info {
-  margin: 30px auto;
-}
-
-#gov-detailed {
-  margin: 30px auto;
-
-  .detail-item {
-    margin: 20px auto;
   }
 }
 
