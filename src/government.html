@@ -282,12 +282,14 @@
     <script src="js/scripts.js"></script>
     <script>
         $(document).ready(() => {
-            $('#control-2').on('click', () => {
+            $('#control-2').on('click', (e) => {
+                e.preventDefault();
                 $('html,body').animate({
                     scrollTop: $('#section-2').offset().top
                 }, 1000, 'easeInQuart');
             })
-            $('#control-3').on('click', () => {
+            $('#control-3').on('click', (e) => {
+                e.preventDefault();
                 $('html,body').animate({
                     scrollTop: $('#section-3').offset().top
                 }, 1000, 'easeInQuart');
