@@ -137,22 +137,22 @@
                 <nav class="side-nav">
                     <h3 class="side-nav__title">On This Page...</h3>
                     <ul class="side-nav__menu">
-                        <li class="active">
+                        <li class="active" id="control-1">
                             <a href="#">Page Subsection</a>
                         </li><!-- page subsection -->
-                        <li>
+                        <li id="control-2">
                             <a href="#">Page Subsection</a>
                         </li><!-- page subsection -->
-                        <li>
+                        <li id="control-3">
                             <a href="#">Page Subsection</a>
                         </li><!-- page subsection -->
-                        <li>
+                        <li id="control-4">
                             <a href="#">Page Subsection</a>
                         </li><!-- page subsection -->
                     </ul>
                 </nav>
             </div>
-            <div class="lead generic-content">
+            <div class="lead generic-content" id="section-1">
                 <h3 class="content-category">Government</h3>
                 <h2 class="content-main-title">About Government</h2>
                 <h3 class="content-section-title">Government Organization</h3>
@@ -183,7 +183,7 @@
             </div><!-- lead -->
         </div><!-- duo layout-->
     </section>
-    <section class="section">
+    <section class="section" id="section-2">
         <div class="container">
             <h2 class="section-header">What the Government is doing</h2>
             <div class="columns is-multiline">
@@ -217,7 +217,7 @@
         </div>
 
     </section>
-    <footer class="footer">
+    <footer class="footer" id="section-3">
         <img src="./img/emblem.svg" alt="" class="footer__bg-overlay">
         <div class="container">
             <div class="level">
@@ -277,8 +277,23 @@
         </div>
 
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('#control-2').on('click', () => {
+                $('html,body').animate({
+                    scrollTop: $('#section-2').offset().top
+                }, 1000, 'easeInQuart');
+            })
+            $('#control-3').on('click', () => {
+                $('html,body').animate({
+                    scrollTop: $('#section-3').offset().top
+                }, 1000, 'easeInQuart');
+            })
+        })
+    </script>
 </body>
 
 </html>

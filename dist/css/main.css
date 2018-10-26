@@ -382,6 +382,19 @@ p {
   .menu__item {
     display: inline-block;
     position: relative; }
+    .menu__item--with-submenu {
+      position: relative; }
+      .menu__item--with-submenu:hover .submenu {
+        visibility: visible;
+        background: #ffffff;
+        z-index: 5;
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition: 0.5s ease-out;
+        -o-transition: 0.5s ease-out;
+        transition: 0.5s ease-out; }
   .menu__link {
     display: inline-block;
     height: 100%;
@@ -403,7 +416,14 @@ p {
         font-size: 1rem; }
 
 .submenu {
-  display: none; }
+  visibility: hidden;
+  position: absolute;
+  z-index: -5;
+  list-style: none;
+  opacity: 0;
+  -webkit-transform: translateY(25px);
+  -ms-transform: translateY(25px);
+  transform: translateY(25px); }
 
 .btn {
   padding: 2rem 3rem;
