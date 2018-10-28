@@ -6,4 +6,27 @@
   list-style: none;
   opacity: 0;
   transform: translateY(25px);
+  min-width: 30rem;
+  background-color: $color-primary--darkest;
+  border-top: 2px solid $color-accent;
+
+  &.active {
+    display: none;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 100%;
+
+    &:hover {
+      background-color: $color-primary--darker;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+
 }

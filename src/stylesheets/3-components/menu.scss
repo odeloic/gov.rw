@@ -1,16 +1,38 @@
 .menu {
   list-style-type: none;
   margin-top: 1.8rem;
+  margin-right: 2rem;
+
+  @include until($medium) {
+    margin-top: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
 
   &__item {
     display: inline-block;
+    color: $color-primary--darkest;
     position: relative;
+    transition: all .3s ease;
+
+    @include until($medium) {
+      display: block;
+      color: #fff;
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: $color-primary--darkest;
+      color: #fff;
+    }
+
     &--with-submenu {
       position: relative;
+
       &:hover .submenu {
         //display: block;
         visibility: visible;
-        background: $color-white;
         z-index: 5;
         opacity: 1;
         transform: translateY(0);
@@ -19,7 +41,9 @@
     }
 
     &:not(:last-child) {
-      // margin-right: 3.4rem;
+      @include until($small) {
+        border-bottom: .5px solid $color-blue-light;
+      }
     }
   }
 
@@ -27,12 +51,17 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    padding: 3rem 3rem;
+    padding: 2.7rem 2.7rem;
     text-decoration: none;
-    color: $color-primary--darkest;
+    color: inherit;
     font-family: $font-headings;
     font-weight: 700;
     font-size: 1.1rem;
+
+
+    @include until($medium) {
+      padding: 2rem 2rem;
+    }
 
     &__icon {
       position: absolute;

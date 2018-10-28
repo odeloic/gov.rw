@@ -45,3 +45,20 @@
 @mixin easeInOut($s) {
     transition: $s ease-in-out;
 }
+
+// Media Queries Mixins
+
+
+
+@mixin from($device) {
+    @media screen and (min-width: $device) {
+        @content
+    }
+}
+
+
+@mixin until($device) {
+    @media screen and (max-width: $device - 0.0625em) {
+        @content
+    }
+}

@@ -14,6 +14,7 @@ $color-gray: #b1b1b1;
 $color-white: #ffffff;
 // extra colors
 $color-accent: #fbd400;
+$color-blue-light: #DAE5E9;
 //typography
 $font-headings: "Merriweather",
 serif;
@@ -21,3 +22,9 @@ $font-text: "Source Sans Pro",
 sans-serif;
 $font-headings-light: "Source Sans Pro",
 sans-serif;
+
+// devices breakpoints
+$xsmall: 28.75em;
+$small: 48.0625em;
+$medium: 62.5em;
+$large: 72em;
