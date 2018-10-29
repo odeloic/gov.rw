@@ -1,5 +1,6 @@
 .card {
   padding: 3rem 4rem;
+  border-radius: 4px;
 
   &__title {
     font-size: 1.8rem;
@@ -31,6 +32,7 @@
 
   &--plain {
     background-color: $color-gray--light;
+
 
     .card__title {
       color: $color-primary--darker;
