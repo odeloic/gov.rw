@@ -3437,6 +3437,23 @@
   }
 }
 
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -3544,17 +3561,6 @@ p {
   width: 30rem;
   margin-top: 1rem;
 }
-@media screen and (max-width: 62.4375em) {
-  .navigation .search-form {
-    width: 99%;
-    margin-left: 3rem;
-  }
-  .navigation .search-form__input {
-    background-color: transparent;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-  }
-}
 .navigation .languages {
   position: absolute;
   top: 0.3rem;
@@ -3587,7 +3593,7 @@ p {
   margin-top: 1.8rem;
   margin-right: 2rem;
 }
-@media screen and (max-width: 62.4375em) {
+@media only screen and (max-width: 60.625em) {
   .menu {
     margin-top: 3rem;
     margin-right: 0;
@@ -3600,7 +3606,7 @@ p {
   position: relative;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 62.4375em) {
+@media only screen and (max-width: 60.625em) {
   .menu__item {
     display: block;
     color: #fff;
@@ -3622,7 +3628,7 @@ p {
           transform: translateY(0);
   transition: 0.5s ease-out;
 }
-@media screen and (max-width: 48em) {
+@media only screen and (max-width: 60.625em) {
   .menu__item:not(:last-child) {
     border-bottom: 0.5px solid #DAE5E9;
   }
@@ -3638,7 +3644,7 @@ p {
   font-weight: 700;
   font-size: 1.1rem;
 }
-@media screen and (max-width: 62.4375em) {
+@media only screen and (max-width: 60.625em) {
   .menu__link {
     padding: 2rem 2rem;
   }
@@ -3992,7 +3998,6 @@ a {
   margin-bottom: 1rem;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
-  width: 60%;
 }
 .news-card__date {
   font-size: 1rem;
@@ -4345,7 +4350,7 @@ img {
   visibility: visible;
   background-color: blue;
 }
-@media screen and (max-width: 62.4375em) {
+@media only screen and (max-width: 60.625em) {
   .mobile-nav {
     flex-direction: column;
     position: fixed;
@@ -4357,7 +4362,7 @@ img {
     z-index: 1000;
   }
 }
-@media screen and (max-width: 28.6875em) {
+@media only screen and (max-width: 37.5em) {
   .mobile-nav {
     width: 80%;
   }

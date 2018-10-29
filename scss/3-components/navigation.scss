@@ -9,7 +9,7 @@
     width: 30rem;
     margin-top: 1rem;
 
-    @include until($medium) {
+    @include respond($medium) {
       width: 99%;
       margin-left: 3rem;
 

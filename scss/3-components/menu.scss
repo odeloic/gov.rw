@@ -3,7 +3,7 @@
   margin-top: 1.8rem;
   margin-right: 2rem;
 
-  @include until($medium) {
+  @include respond(medium) {
     margin-top: 3rem;
     margin-right: 0;
     width: 100%;
@@ -16,7 +16,7 @@
     position: relative;
     transition: all .3s ease;
 
-    @include until($medium) {
+    @include respond(medium) {
       display: block;
       color: #fff;
       width: 100%;
@@ -41,7 +41,7 @@
     }
 
     &:not(:last-child) {
-      @include until($small) {
+      @include respond(medium) {
         border-bottom: .5px solid $color-blue-light;
       }
     }
@@ -59,7 +59,7 @@
     font-size: 1.1rem;
 
 
-    @include until($medium) {
+    @include respond(medium) {
       padding: 2rem 2rem;
     }
 

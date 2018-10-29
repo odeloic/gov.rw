@@ -50,19 +50,6 @@
 
 
 
-@mixin from($device) {
-    @media screen and (min-width: $device) {
-        @content
-    }
-}
-
-
-@mixin until($device) {
-    @media screen and (max-width: $device - 0.0625em) {
-        @content
-    }
-}
-
 @mixin absoluteCenter {
     position: absolute;
     top: 50%;

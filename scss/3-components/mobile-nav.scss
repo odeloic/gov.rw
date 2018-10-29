@@ -10,7 +10,7 @@
         background-color: blue;
     }
 
-    @include until($medium) {
+    @include respond(medium) {
         flex-direction: column;
         position: fixed;
         right: 0;
@@ -21,7 +21,7 @@
         z-index: 1000;
     }
 
-    @include until($xsmall) {
+    @include respond(small) {
         width: 80%;
     }
 }
