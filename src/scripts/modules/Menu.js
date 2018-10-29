@@ -1,25 +1,15 @@
 class Menu {
-    constructor(navWrapper, subnavWapper) {
-        this.navWrapper = navWrapper;
-        this.subnavWapper = subnavWapper;
-        this.triggers = document.querySelectorAll('.menu__item--with-submenu');
-        this.events();
+    constructor() {
+        this.menuOpenButton = document.querySelector('.menu__button');
+        this.mobileMenu = document.querySelector('.mobile-nav');
+        this.init();
     }
 
-    events() {
-        this.triggers.forEach((item) => {
-            // item.addEventListener('mouseover', this.revealSubMenu.bind(this));
-            item.addEventListener('mouseover', function (e) {
-                // e.stopImmediatePropagation();
-                console.log(this.querySelector('.submenu'))
-                this.querySelector('.submenu').classList['toggle']('acitve');
-            })
-        })
-
+    init() {
+        this.menuOpenButton.addEventListener('click', this.toggle.bind(this));
     }
-
-    revealSubMenu() {
-        console.log(this)
+    toggle() {
+        this.mobileMenu.classList['add']('is-visible');
     }
 }
 

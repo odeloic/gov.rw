@@ -1,12 +1,8 @@
-// Navigation
+var menuOpenButton = document.querySelector('.menu__button'),
+    mobileMenu = document.querySelector('.mobile-nav');
 
-var navigationWrapper = document.querySelector('.navigation'),
-    menuWrapper = document.querySelector('.menu'),
-    subMenuTriggers = document.querySelectorAll('li.menu__item--with-submenu');
+menuOpenButton.addEventListener('click', toggle);
 
-subMenuTriggers.forEach(function (element) {
-    element.addEventListener('click', function (e) {
-        console.log(e.target.parentNode);
-    })
-
-})
+function toggle() {
+    mobileMenu.classList['add']('is-visible');
+}

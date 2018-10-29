@@ -15,38 +15,113 @@
 <body>
     <header class="header">
         <div class="header__top">
-            <img src="./img/rwanda-flag.png" alt="" class="header__top__img">
+            <img src="./img/rwanda-flag-1.png" alt="" class="header__top__img">
             <span class="header__top__caption">Official Website the Government of Rwanda</span>
         </div>
         <nav class="navigation">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <a href="">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Coat_of_arms_of_Rwanda.svg/250px-Coat_of_arms_of_Rwanda.svg.png"
-                            alt="">
-                    </a>
-                </div>
-                <ul class="menu">
-                    <li><a href="">Government</a></li>
-                    <li><a href="">Discover Rwanda</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Press</a></li>
-                </ul>
-                <div class="search-form">
-                    <form action="" method="post">
-                        <div class="input-grp">
-                            <input type="text" name="search" id="search" class="search-form__input">
-                            <button type="submit" class="search-form__button">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
+            <div class="languages">
+                <span>Select language: </span>
+                <span class="active">EN</span>
+                <span>FR</span>
+                <span>KN</span>
             </div>
+            <div class="site-logo">
+                <a href="#">
+                    <img src="./img/emblem.svg" alt="" class="site-logo__img">
+                </a>
+            </div><!-- site-logo -->
+            <div class="menu__button">
+                <span class="menu__icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+            <div class="mobile-nav">
 
-        </nav>
+                <ul class="menu">
+                    <li class="menu__item menu__item--with-submenu">
+                        <a href="government.html" class="menu__link">Government</a>
+                        <span class="menu__link__icon"><i class="fas fa-angle-down"></i></span>
 
-    </header>
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="#" class="menu__link">President's Office</a>
+                            </li><!-- submenu item -->
+
+                            <li class="submenu__item">
+                                <a href="#" class="menu__link">Prime Minister's Office</a>
+                            </li><!-- submenu item -->
+
+                            <li class="submenu__item">
+                                <a href="#" class="menu__link">Ministries</a>
+                            </li><!-- submenu item -->
+
+                            <li class="submenu__item">
+                                <a href="#" class="menu__link">Government Agencies</a>
+                            </li><!-- submenu item -->
+                        </ul><!-- submenu-->
+
+                    </li><!-- menu__item -->
+
+                    <li class="menu__item menu__item--with-submenu">
+                        <a href="history.html" class="menu__link">Rwanda</a>
+                        <span class="menu__link__icon"><i class="fas fa-angle-down"></i></span>
+
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="#" class="menu__link">History</a>
+                            </li><!-- submenu item -->
+
+                            <li class="submenu__item">
+                                <a href="#" class="menu__link">Living in Rwanda</a>
+                            </li><!-- submenu item -->
+
+                            <li class="submenu__item">
+                                <a href="#" class="menu__link">Society and Culture</a>
+                            </li><!-- submenu item -->
+
+                        </ul><!-- submenu-->
+                    </li><!-- menu__item -->
+
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Invest in Rwanda</a>
+                    </li><!-- menu__item -->
+
+                    <li class="menu__item">
+                        <a href="services.html" class="menu__link">Services</a>
+                    </li><!-- menu__item -->
+
+                    <li class="menu__item menu__item--with-submenu">
+                        <a href="news.html" class="menu__link">Press</a>
+                        <span class="menu__link__icon"><i class="fas fa-angle-down"></i></span>
+
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="#" class="menu__link">Press Releases</a>
+                            </li><!-- submenu item -->
+
+                            <li class="submenu__item">
+                                <a href="#" class="menu__link">Government News</a>
+                            </li><!-- submenu item -->
+
+                            <li class="submenu__item">
+                                <a href="#" class="menu__link">Cabinet Resolutions</a>
+                            </li><!-- submenu item -->
+
+                        </ul><!-- submenu-->
+
+                    </li><!-- menu__item -->
+
+                </ul><!-- menu -->
+
+                <form action="/" class="form search-form" method="GET">
+                    <input type="text" name="q" class="search-form__input" placeholder="Search gov.rw...">
+                    <input type="submit" value="Search" class="btn btn--submit search-form__submit">
+
+                </form>
+            </div><!-- search form -->
+            </div><!-- mobile nav -->
+        </nav><!-- navigation -->
+    </header><!-- header -->
 
     <section id="gov-detailed">
         <div class="gov-detailed__grid columns is-mobile is-8">

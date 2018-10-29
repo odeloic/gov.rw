@@ -3,9 +3,14 @@
     align-items: center;
     justify-content: space-around;
     flex: 1;
+    visibility: hidden;
+
+    &.is-visible {
+        visibility: visible;
+        background-color: blue;
+    }
 
     @include until($medium) {
-        // display: none;
         flex-direction: column;
         position: fixed;
         right: 0;
@@ -19,6 +24,4 @@
     @include until($xsmall) {
         width: 80%;
     }
-
-
 }
