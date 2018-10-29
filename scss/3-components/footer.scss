@@ -1,0 +1,37 @@
+.footer {
+  padding: 8rem 5rem;
+  background-color: $color-primary--darkest;
+  position: relative;
+
+  &__heading {
+    color: $color-accent;
+    font-family: $font-headings;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  &__navlist {
+    list-style-type: none;
+    margin-bottom: 2rem;
+
+    li {
+      font-family: $font-text;
+      font-weight: 400;
+      color: $color-white;
+      font-size: 1.4rem;
+      margin-bottom: .5rem;
+    }
+  }
+
+  .icons-list {
+    text-align: right;
+  }
+
+  &__bg-overlay {
+    position: absolute;
+    top: 4rem;
+    right: 10rem;
+    width: 30rem;
+    opacity: .2;
+  }
+}

@@ -1,0 +1,19 @@
+.cta {
+    background-color: $color-primary;
+    width: 100%;
+    text-align: center;
+    padding: 5rem 0;
+
+    h2 {
+        display: inline-block;
+        font-family: $font-text;
+        font-weight: 300;
+        color: $color-white;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    a {
+        display: block;
+    }
+}

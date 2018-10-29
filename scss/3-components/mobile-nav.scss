@@ -1,0 +1,27 @@
+.mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+    visibility: hidden;
+
+    &.is-visible {
+        visibility: visible;
+        background-color: blue;
+    }
+
+    @include until($medium) {
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 40%;
+        background-color: $color-primary--darkest;
+        z-index: 1000;
+    }
+
+    @include until($xsmall) {
+        width: 80%;
+    }
+}

@@ -1,0 +1,93 @@
+// libraries
+@import "../node_modules/bulma/sass/utilities/_all";
+@import "../node_modules/bulma/sass/elements/container";
+@import "../node_modules/bulma/sass/layout/section";
+@import "../node_modules/bulma/sass/components/level";
+@import "../node_modules/bulma/sass/grid/columns";
+@import "../node_modules/bulma/sass/grid/_all";
+
+// Base
+@import "2-base/variables";
+@import "2-base/mixins";
+@import "2-base/general";
+@import "2-base/layout";
+@import "2-base/page";
+// Typography
+@import "2-base/typography";
+// components
+@import "3-components/header.scss";
+@import "3-components/navigation.scss";
+@import "3-components/site-logo";
+@import "3-components/menu";
+@import "3-components/submenu.scss";
+@import "3-components/button.scss";
+@import "3-components/link.scss";
+@import "3-components/search-form.scss";
+@import "3-components/card.scss";
+@import "3-components/section-header";
+@import "3-components/news-card";
+@import "3-components/footer.scss";
+@import "3-components/icons-list";
+@import "3-components/form";
+@import "3-components/image";
+@import "3-components/hero-slider";
+@import "3-components/breadcrumb.scss";
+@import "3-components/generic-content";
+@import "3-components/side-nav";
+@import "3-components/study-case";
+@import "3-components/entity";
+@import "3-components/cta";
+@import "3-components/in-page-nav";
+@import "3-components/mobile-nav";
+
+//Services
+#services {
+  margin-top: 20px;
+
+  .service {
+    margin: 20px auto;
+    border-bottom: 1px solid $color-gray;
+    padding-bottom: 15px;
+
+    .service-heading {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+//Agencies
+#agencies {
+  margin-top: 20px;
+
+  .agency {
+    margin: 20px auto;
+    border-bottom: 1px solid $color-gray;
+    padding-bottom: 15px;
+
+    .agency-heading {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+//Link to Irembo Website
+.irembo {
+  background: $color-primary;
+  padding: 40px auto;
+  display: grid;
+  place-content: center;
+  height: 20vh;
+
+  .underlined {
+    color: $color-white;
+    text-decoration: underline;
+    font-size: 1.2rem;
+  }
+}
+
+.social-share {
+  position: relative;
+  margin: 20px 20%;
+}

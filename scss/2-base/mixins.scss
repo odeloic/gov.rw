@@ -1,0 +1,71 @@
+@mixin clearfix {
+    &::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin linkIcon($color) {
+    span.text {
+        margin-right: .5rem;
+        color: $color;
+        font-size: 1.2rem;
+    }
+
+    span.icon {
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 1rem;
+        border: 1px solid $color;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: .8rem;
+
+        }
+    }
+}
+
+@mixin easeOut($s) {
+    transition: $s ease-out;
+}
+
+@mixin ease($s) {
+    transition: $s ease;
+}
+
+@mixin transDelay($s) {
+    transition-delay: $s;
+}
+
+@mixin easeInOut($s) {
+    transition: $s ease-in-out;
+}
+
+// Media Queries Mixins
+
+
+
+@mixin from($device) {
+    @media screen and (min-width: $device) {
+        @content
+    }
+}
+
+
+@mixin until($device) {
+    @media screen and (max-width: $device - 0.0625em) {
+        @content
+    }
+}
+
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,38 @@
+.side-nav {
+    color: $color-primary--darkest;
+    border: 1px solid $color-gray;
+    font-family: $font-headings;
+
+    &__title {
+        padding: 1.5rem 1rem;
+        border-bottom: 1px solid $color-gray;
+    }
+
+    &__menu {
+        list-style: none;
+        width: 100%;
+
+        li {
+            display: block;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $color-gray;
+            }
+
+            &.active {
+                a {
+                    background-color: $color-primary--darkest;
+                    color: #fff;
+                }
+            }
+        }
+
+        a {
+            font-weight: 700;
+            display: inline-block;
+            padding: 1.5rem 1rem;
+            width: 100%;
+            background-color: $color-gray--light;
+        }
+    }
+}

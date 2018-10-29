@@ -1,0 +1,19 @@
+.form {
+
+    input,
+    textfield {
+        border: 1px solid $color-primary--darkest;
+        outline: none;
+        padding: 1rem .5rem;
+    }
+
+    input[type="submit"] {
+        border: none;
+        padding: 1rem 2rem;
+    }
+
+    input::focus,
+    textfield::focus {
+        outline: none;
+    }
+}

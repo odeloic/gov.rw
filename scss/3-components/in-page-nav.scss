@@ -1,0 +1,27 @@
+.in-page-nav {
+    padding: 1.5rem 2rem;
+    background-color: $color-blue-light;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            display: inline-block;
+
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+
+        }
+
+        a {
+            font-family: $font-text;
+            font-weight: 700;
+            font-size: 1rem;
+            color: $color-primary;
+        }
+    }
+}
