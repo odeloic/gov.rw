@@ -1,0 +1,36 @@
+.agency {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+    &__thumbnail {
+        height: 20rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__details {
+        padding: 1.5rem 0;
+    }
+
+    &__title {
+        font-family: $font-headings;
+        color: $color-primary--darker;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        color: $color-base;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+
+}

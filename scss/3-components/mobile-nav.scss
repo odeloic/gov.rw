@@ -3,14 +3,16 @@
     align-items: center;
     justify-content: space-around;
     flex: 1;
-    // visibility: hidden;
+    transition: all .3s ease;
 
     &.is-visible {
-        visibility: visible;
-        background-color: blue;
+        transform: translate(0);
     }
 
     @include respond(medium) {
+        transform: translate3d(100%, 0, 0);
+        display: flex;
+        // display: none;
         flex-direction: column;
         position: fixed;
         right: 0;
@@ -23,5 +25,6 @@
 
     @include respond(small) {
         width: 80%;
+        transform: translate3d(100%, 0, 0);
     }
 }

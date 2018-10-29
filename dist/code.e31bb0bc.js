@@ -176,11 +176,35 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"scripts/Menu.js":[function(require,module,exports) {
+var menuOpenButton = document.querySelector('.menu__button'),
+    mobileMenuWrapper = document.querySelector('.mobile-nav');
+menuOpenButton.addEventListener('click', revealMenu);
+
+var revealMenu = function revealMenu() {
+  mobileMenuWrapper.classList['add']('is-visible');
+};
+},{}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./scss/main.scss");
-},{"./scss/main.scss":"scss/main.scss"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+require("./scripts/Menu");
+
+var menuOpenButton = document.querySelector('.menu__button'),
+    menuCloseButton = document.querySelector('.menu__close'),
+    mobileMenuWrapper = document.querySelector('.mobile-nav');
+menuOpenButton.addEventListener('click', revealMenu);
+menuCloseButton.addEventListener('click', hideMenu);
+
+function revealMenu() {
+  mobileMenuWrapper.classList['add']('is-visible');
+}
+
+function hideMenu() {
+  mobileMenuWrapper.classList.contains('is-visible') ? mobileMenuWrapper.classList['remove']('is-visible') : '';
+}
+},{"./scss/main.scss":"scss/main.scss","./scripts/Menu":"scripts/Menu.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -207,7 +231,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65145" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53652" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

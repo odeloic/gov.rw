@@ -1,4 +1,6 @@
 .generic-content {
+    padding-bottom: 2rem;
+
     .content-category {
         font-family: $font-text;
         font-weight: 400;
@@ -13,13 +15,25 @@
         color: $color-primary--darkest;
         font-size: 6rem;
         margin-bottom: 3rem;
+
+        @include respond(small) {
+            font-size: 4rem;
+        }
     }
 
     .content-section-title {
         font-family: $font-headings;
-        font-weight: 300;
+        font-weight: e00;
         color: $color-secondary;
         font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .content-sub-section-title {
+        font-family: $font-headings;
+        font-weight: 400;
+        color: $color-secondary;
+        font-size: 1.1rem;
         margin-bottom: 2rem;
     }
 
@@ -30,15 +44,37 @@
         font-size: 3rem;
         margin-bottom: 3rem;
         line-height: 1.5;
+
+        @include respond(medium) {
+            font-size: 2rem;
+            line-height: 1.7;
+        }
     }
 
     p {
-
         font-family: $font-text;
         font-weight: 300;
         color: $color-base;
         font-size: 2.1rem;
         margin-bottom: 1.5rem;
         line-height: 1.7;
+
+        @include respond(medium) {
+            font-size: 1.7rem;
+            line-height: 1.6;
+        }
+    }
+
+    ul {
+        font-family: $font-text;
+        color: $color-base;
+        padding-left: 1rem;
+        margin-bottom: 3rem;
+
+        li {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
     }
 }

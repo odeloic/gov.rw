@@ -10,8 +10,8 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 
-  @mixin until($large) {
-    font-size: 50%;
+  @include respond(medium) {
+    font-size: 58%;
   }
 }
 

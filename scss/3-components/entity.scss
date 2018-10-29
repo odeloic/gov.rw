@@ -2,7 +2,13 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
-    padding-bottom: 2rem;
+    // padding-bottom: 2rem;
+    padding: 2rem;
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: $color-gray--light;
+    }
 
     &__title {
         margin-bottom: 1rem;
@@ -10,12 +16,17 @@
         align-items: center;
         justify-content: flex-start;
         color: $color-primary;
+        transition: color .3s ease;
 
         h3 {
             font-family: $font-headings;
-            font-size: 1.4rem;
+            font-size: 1.9rem;
             margin-right: 1rem;
 
+        }
+
+        &:hover {
+            color: $color-secondary;
         }
 
         .icon {
@@ -30,6 +41,7 @@
     &__description {
         color: $color-gray;
         font-size: 1.5rem;
+        font-weight: 400;
     }
 
     &:not(:last-child) {

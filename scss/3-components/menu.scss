@@ -4,7 +4,7 @@
   margin-right: 2rem;
 
   @include respond(medium) {
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-right: 0;
     width: 100%;
   }
@@ -20,6 +20,10 @@
       display: block;
       color: #fff;
       width: 100%;
+
+      &:nth-child(odd) {
+        background-color: $color-primary--darker;
+      }
     }
 
     &:hover {
@@ -42,7 +46,7 @@
 
     &:not(:last-child) {
       @include respond(medium) {
-        border-bottom: .5px solid $color-blue-light;
+        // border-bottom: .2px solid $color-gray--light;
       }
     }
   }
@@ -84,9 +88,10 @@
     transform: translateY(-50%);
     right: 5rem;
     cursor: pointer;
+    display: none;
 
-    @include from($medium) {
-      display: none;
+    @include respond(medium) {
+      display: block;
     }
   }
 
@@ -102,12 +107,25 @@
 
   &__close {
     position: absolute;
-    top: 3rem;
-    left: 3rem;
+    top: 2rem;
+    left: 2rem;
+    color: $color-accent;
+    display: flex;
+    align-content: center;
+    display: none;
+
+    @include respond(medium) {
+      display: block;
+    }
 
     i {
-      color: $color-white;
       font-size: 1.5rem;
+    }
+
+    .handler {
+      margin-left: 1rem;
+      font-family: $font-text;
+      font-size: 1.2rem;
     }
   }
 }
