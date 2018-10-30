@@ -9,6 +9,7 @@
   min-width: 30rem;
   background-color: $color-primary--darkest;
   border-top: 2px solid $color-accent;
+  @include easeOut(0.5s);
 
   &.active {
     display: none;
@@ -27,6 +28,4 @@
       width: 100%;
     }
   }
-
-
 }
