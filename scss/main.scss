@@ -5,6 +5,9 @@
 @import "../node_modules/bulma/sass/components/level";
 @import "../node_modules/bulma/sass/grid/columns";
 @import "../node_modules/bulma/sass/grid/_all";
+@import "../node_modules/swiper/dist/css/swiper.min.css";
+@import "../node_modules//slick-carousel/slick/slick.css";
+@import "../node_modules//slick-carousel/slick/slick-theme.css";
 
 // Base
 @import "2-base/variables";
@@ -41,6 +44,8 @@
 @import "3-components/in-page-nav";
 @import "3-components/mobile-nav";
 @import "3-components/agency";
+@import "3-components/swiper";
+@import "3-components/slick";
 
 //Services
 #services {

@@ -31,6 +31,15 @@
   }
 
   &--plain {
+
+    a {
+      margin-left: 2rem;
+    }
+
+    .card__title {
+      margin-bottom: 4rem;
+    }
+
     background-color: $color-gray--light;
 
 

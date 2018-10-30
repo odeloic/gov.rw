@@ -20,7 +20,10 @@
     "postcss-modules": "^1.4.1"
   },
   "dependencies": {
+    "jquery": "^3.3.1",
     "parcel-plugin-handlebars": "^0.4.4",
-    "sass": "^1.14.3"
+    "sass": "^1.14.3",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^4.4.1"
   }
 }

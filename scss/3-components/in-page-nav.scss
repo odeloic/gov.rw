@@ -1,21 +1,29 @@
 .in-page-nav {
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
+    padding-top: 0;
     background-color: $color-blue-light;
+    overflow: hidden;
+    position: relative;
+
+    &__nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $color-secondary;
+        cursor: pointer;
+    }
+
+    &__prev {
+        left: 1rem;
+    }
+
+    &__next {
+        right: 1rem;
+    }
 
     ul {
+        width: 100%;
         list-style-type: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        li {
-            display: inline-block;
-
-            &:not(:last-child) {
-                margin-right: 3rem;
-            }
-
-        }
 
         a {
             font-family: $font-text;

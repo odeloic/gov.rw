@@ -27,40 +27,71 @@ a {
   font-weight: 700;
   font-family: $font-text;
   display: inline-block;
-  color: inherit;
+  transition: all .3s ease;
+
+
+  &--dark {
+    color: $color-base;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &--white {
+    color: $color-white;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  &--block {
+    // display: block;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: .5px solid $color-gray;
+  }
 
   &--with-icon {
+    display: block;
     margin-top: 1.5rem;
+
+    .text,
+    .icon {
+      color: inherit;
+    }
+
+
 
     &--dark {
       @include linkIcon($color-gray--dark);
+
+      &:hover {
+        color: $color-primary;
+      }
+
+      &:hover span.icon {
+        border-color: $color-primary;
+      }
     }
 
     &--white {
       @include linkIcon($color-white);
+
+      &:hover {
+        color: $color-accent;
+      }
+
+      &:hover span.icon {
+        border-color: $color-accent;
+      }
     }
+
+
   }
 
-  // &--with-icon {
-  //   span.text {
-  //     margin-right: .5rem;
-  //   }
 
-  //   span.icon {
-  //     display: inline-block;
-  //     height: 2rem;
-  //     width: 2rem;
-  //     border-radius: 1rem;
-  //     border: 1px solid $color-white;
-  //     display: inline-flex;
-  //     align-items: center;
-  //     justify-content: center;
-
-  //     i {
-  //       font-size: .8rem;
-
-  //     }
-  //   }
 }
 
 .collection {

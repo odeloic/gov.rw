@@ -1,28 +1,41 @@
 .hero-slider {
-    height: 80vh;
+    height: 60vh;
     width: 100%;
+
+    @include respond(small) {
+        height: 80vh;
+    }
 
     &__slide {
         position: relative;
         width: 100%;
         height: 100%;
+        overflow: hidden;
 
         &__img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: 80% 50%;
+            object-position: 40% 50%;
         }
     }
 
     &__caption {
         width: 50%;
         position: absolute;
-        top: 50%;
+        bottom: 20%;
         left: 30%;
-        transform: translate(-30%, -50%);
-        background-color: rgba($color-base, .6);
+        transform: translate(-30%, -20%);
+        background-color: rgba($color-base, .8);
         padding: 3rem 5rem;
+
+        @include respond(small) {
+            top: 2rem;
+            left: 2rem;
+            width: 80%;
+            padding: 1rem 2rem;
+            transform: translate(0);
+        }
     }
 
     &__title {
@@ -31,6 +44,10 @@
         color: $color-accent;
         font-weight: 400;
         margin-bottom: 1.5rem;
+
+        @include respond(small) {
+            font-size: 1.5rem;
+        }
     }
 
     &__description {
@@ -38,6 +55,10 @@
         font-weight: 400;
         line-height: 1.7;
         margin-bottom: 1.5rem;
+
+        @include respond(small) {
+            font-size: 1.2rem;
+        }
     }
 
 

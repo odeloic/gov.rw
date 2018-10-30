@@ -171,12 +171,29 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/main.scss":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/swiper/dist/css/swiper.min.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/slick-carousel/slick/slick.css":[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/slick-carousel/slick/slick-theme.css":[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"./ajax-loader.gif":[["ajax-loader.8c8a0c6d.gif","node_modules/slick-carousel/slick/ajax-loader.gif"],"node_modules/slick-carousel/slick/ajax-loader.gif"],"./fonts/slick.eot":[["slick.c929d11d.eot","node_modules/slick-carousel/slick/fonts/slick.eot"],"node_modules/slick-carousel/slick/fonts/slick.eot"],"./fonts/slick.woff":[["slick.163147d7.woff","node_modules/slick-carousel/slick/fonts/slick.woff"],"node_modules/slick-carousel/slick/fonts/slick.woff"],"./fonts/slick.ttf":[["slick.2a44336d.ttf","node_modules/slick-carousel/slick/fonts/slick.ttf"],"node_modules/slick-carousel/slick/fonts/slick.ttf"],"./fonts/slick.svg":[["slick.9168fb61.svg","node_modules/slick-carousel/slick/fonts/slick.svg"],"node_modules/slick-carousel/slick/fonts/slick.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"scss/main.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"../node_modules/swiper/dist/css/swiper.min.css":"node_modules/swiper/dist/css/swiper.min.css","../node_modules//slick-carousel/slick/slick.css":"node_modules/slick-carousel/slick/slick.css","../node_modules//slick-carousel/slick/slick-theme.css":"node_modules/slick-carousel/slick/slick-theme.css","_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -203,7 +220,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53652" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50979" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

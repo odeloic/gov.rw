@@ -4,6 +4,19 @@
     text-align: center;
     padding: 5rem 0;
 
+    &--img {
+        padding-top: 1rem;
+        border-top: 1px solid $color-gray--light;
+
+        .cta__title {
+            font-family: $font-text;
+            color: $color-primary--darkest;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+
     h2 {
         display: inline-block;
         font-family: $font-text;

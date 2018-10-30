@@ -1,18 +1,66 @@
 {{!< base}}
-<div class="hero-slider">
+<div class="hero hero-slider">
   <div class="hero-slider__slide">
-    <img src="./img/hero-1.jpg" alt="" class="hero-slider__slide__img" />
+    <img
+      src="./img/abarinzi_igihango.jpg"
+      alt=""
+      class="hero-slider__slide__img"
+     />
+
     <div class="hero-slider__caption">
       <h3 class="hero-slider__title">
-        Welcome to Rwanda
+        President Kagame hails acts of courage and humanity displayed by ‘Abarinzi b’Igihango’
       </h3>
-      <p class="hero-slider__description">
+      {{! <p class="hero-slider__description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde
                 deserunt
                 quam aliquid ullam cupiditate
                 totam accusantium veritatis velit vero.
-      </p>
-      <a href="#" class="link link--with-icon link--with-icon--white">
+      </p> }}
+      <a
+        href="#"
+        class="link link--white link--with-icon link--with-icon--white"
+      >
+        <span class="text">
+          Learn More
+        </span>
+        <span class="icon white">
+          <i class="fa fa-arrow-right"></i>
+        </span>
+      </a>
+    </div>
+  </div>
+  <!-- hero slide-->
+  <div class="hero-slider__slide">
+    <img src="./img/tree_planting.jpg" alt="" class="hero-slider__slide__img" />
+    <div class="hero-slider__caption">
+      <h3 class="hero-slider__title">
+        Tree Planting season underway as Rwanda nearly meets forest coverage target
+      </h3>
+      <a
+        href="#"
+        class="link link--white link--with-icon link--with-icon--white"
+      >
+        <span class="text">
+          Learn More
+        </span>
+        <span class="icon white">
+          <i class="fa fa-arrow-right"></i>
+        </span>
+      </a>
+    </div>
+  </div>
+  <!-- hero slide-->
+  <div class="hero-slider__slide">
+    <img src="./img/access_water.jpg" alt="" class="hero-slider__slide__img" />
+    <div class="hero-slider__caption">
+      <h3 class="hero-slider__title">
+        Rwanda on course to achieve universal access to clean water by 2024
+      </h3>
+      <a
+        href="#"
+        class="link link--white link--with-icon link--with-icon--white"
+      >
         <span class="text">
           Learn More
         </span>
@@ -37,12 +85,12 @@
             Services
           </h3>
           <p class="card__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                            ipsum est magnam
-                            neque
-                            maiores molestias.
+            Access to all services in one place
           </p>
-          <a href="#" class="link link--with-icon link--with-icon--white">
+          <a
+            href="services.hbs"
+            class="link link--with-icon link--with-icon--white"
+          >
             <span class="text">
               Browse all Services
             </span>
@@ -58,12 +106,12 @@
             Government Agencies
           </h3>
           <p class="card__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                            ipsum est magnam
-                            neque
-                            maiores molestias.
+            Find all government Ministries and agencies
           </p>
-          <a href="" class="link link--with-icon link--with-icon--white">
+          <a
+            href="agencies.hbs"
+            class="link link--white link--with-icon link--with-icon--white"
+          >
             <span class="text">
               See All Agencies
             </span>
@@ -80,10 +128,7 @@
             Government News
           </h3>
           <p class="card__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                            ipsum est magnam
-                            neque
-                            maiores molestias.
+            What's happening in the government
           </p>
           <a href="#" class="link link--with-icon link--with-icon--white">
             <span class="text">
@@ -108,11 +153,7 @@
           Welcome to the portal of Government of Rwanda
         </h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod pariatur voluptas consectetur
-                        saepe. Cupiditate
-                        voluptate distinctio itaque sint hic dolore, consequuntur necessitatibus tempora possimus
-                        nesciunt neque qui
-                        excepturi commodi magi.
+          A single one-stop-shop website portal for all the government services and information. This web portal was designed to help you to help you in accessing all information and services in the easiest way possible. Learn more on How we built it to help you.
         </p>
         <a href="#" class="link link--with-icon link--with-icon--dark">
           <span class="text">
@@ -124,20 +165,23 @@
         </a>
       </div>
       <!-- column -->
-      <div class="column is-two-fifths is-mobile">
+      <div class="column is-one-third is-mobile">
         <div class="card card--plain">
-          <h2 class="card__title">
-            Most Requested Services
+          <h2 class="card__title card__title--with-icon">
+            <span class="icon">
+              <i class="fas fa-info-circle"></i>
+            </span>
+            Latest Cabinet Resolutions
           </h2>
-          <p>
-            Lorem ipsum dolor sit amet.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet.
-          </p>
+          <a href="#" class="link link--dark link--block">
+            Statement on Cabinet Decisions of 24/10/2018
+          </a>
+          <a href="#" class="link link--dark link--block">
+            Statement on Cabinet Decisions of 24/10/2018
+          </a>
+          <a href="#" class="link link--dark link--block">
+            Statement on Cabinet Decisions of 24/10/2018
+          </a>
           <a href="" class="link link--with-icon link--with-icon--dark">
             <span class="text">
               More
@@ -161,39 +205,73 @@
       Government News
     </h2>
     <div class="columns">
-      <div class="column">
+      <div class="column is-two-thirds">
         <div class="news-card">
-          <div class="news-card__thumb">
-            <a href="#">
-              <img
-                src="https://cdn09.allafrica.com/download/pic/main/main/csiid/00200696:8ddf791360681c613bc2920ab2ba9c45:arc614x376:w614:us1.jpg"
-                alt=""
-               />
-
-            </a>
-          </div>
           <div class="news-card__description">
             <a href="#" class="news-card__label">
-              Education
+              President News
             </a>
             <!-- label -->
             <a href="#">
               <h3 class="news-card__title">
-                News Headline
+                President Kagame in Germany for G20 Summit
               </h3>
             </a>
             <!-- title -->
             <div class="news-card__meta">
               <p class="news-card__excerpt">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Earum nesciunt
-                                    aspernatur
-                                    cumque repellat,
-                                    consequuntur aperiam omnis, fuga laudantium eligendi, saepe ab! Qui maiores
-                                    aspernatur magni!
+                President Kagame is in Berlin, Germany to attend the ‘G20 Investment Summit – German Business and the Compact with Africa (CwA) Countries’ where he will deliver remarks in his double role as the incumbent Chairperson of the African Union and President of Rwanda.
               </p>
               <span class="news-card__date">
-                11.02.2018
+                30.10.2018
+              </span>
+            </div>
+            <!-- meta -->
+          </div>
+        </div>
+        <!-- news-card -->
+        <div class="news-card">
+          <div class="news-card__description">
+            <a href="#" class="news-card__label">
+              Environment
+            </a>
+            <!-- label -->
+            <a href="#">
+              <h3 class="news-card__title">
+                Tree Planting season underway as Rwanda nearly meets forest coverage target
+              </h3>
+            </a>
+            <!-- title -->
+            <div class="news-card__meta">
+              <p class="news-card__excerpt">
+                The 2018/19 Tree Planting Season is underway countrywide as Rwanda nearly achieves its target to have 30 percent of the country’s land covered with forests, with current figures now standing at 29.8 percent.
+              </p>
+              <span class="news-card__date">
+                29.10.2018
+              </span>
+            </div>
+            <!-- meta -->
+          </div>
+        </div>
+        <!-- news-card -->
+        <div class="news-card">
+          <div class="news-card__description">
+            <a href="#" class="news-card__label">
+              Environment
+            </a>
+            <!-- label -->
+            <a href="#">
+              <h3 class="news-card__title">
+                President Kagame hails acts of courage and humanity displayed by ‘Abarinzi b’Igihango’
+              </h3>
+            </a>
+            <!-- title -->
+            <div class="news-card__meta">
+              <p class="news-card__excerpt">
+                President Kagame on Friday hailed four “Abarinzi b’Igihango” for outstanding acts of courage and humanity they displayed by protecting or rescuing thousands of Rwandans during the 1994 Genocide against the Tutsi, as well as promoting unity and reconciliation among Rwandans in its aftermath.
+              </p>
+              <span class="news-card__date">
+                27.10.2018
               </span>
             </div>
             <!-- meta -->
@@ -202,6 +280,14 @@
         <!-- news-card -->
       </div>
       <!-- column-->
+      <div class="column is-one-third">
+        <div class="cta--img">
+          <h3 class="cta__title">
+            Important Notice
+          </h3>
+          <img src="./img/challenge.jpg" alt="" />
+        </div>
+      </div>
     </div>
     <!-- columns -->
   </div>

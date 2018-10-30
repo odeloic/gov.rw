@@ -45,14 +45,19 @@
         font-size: 1.8rem;
         margin-top: 3rem;
         margin-bottom: 1.5rem;
+        transition: color .3s ease;
+
+        &:hover {
+            color: $color-primary;
+        }
     }
 
     &__excerpt {
         font-size: 1.6rem;
-        line-height: 1.6;
+        line-height: 1.7;
         margin-bottom: 1rem;
         font-family: $font-text;
-        font-weight: 300;
+        font-weight: 400;
         // width: 80%;
     }
 

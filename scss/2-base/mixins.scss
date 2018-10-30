@@ -9,7 +9,7 @@
 @mixin linkIcon($color) {
     span.text {
         margin-right: .5rem;
-        color: $color;
+        color: inherit;
         font-size: 1.2rem;
     }
 
