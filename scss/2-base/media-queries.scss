@@ -31,7 +31,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 
   @if $breakpoint==large {
-    @media only screen and (max-width: 70.3125em) {
+    @media only screen and (max-width: 70.3125em) and(min-width:60.626em) {
       @content;
     }
   }

@@ -1,58 +1,79 @@
 @mixin clearfix {
-    &::after {
-        content: '';
-        clear: both;
-        display: table;
-    }
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
 @mixin linkIcon($color) {
-    span.text {
-        margin-right: .5rem;
-        color: inherit;
-        font-size: 1.2rem;
+  span.text {
+    margin-right: 0.5rem;
+    color: inherit;
+    font-size: 1.2rem;
+  }
+
+  span.icon {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    border: 1px solid $color;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: 0.8rem;
     }
-
-    span.icon {
-        display: inline-block;
-        height: 2rem;
-        width: 2rem;
-        border-radius: 1rem;
-        border: 1px solid $color;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-
-        i {
-            font-size: .8rem;
-
-        }
-    }
+  }
 }
 
 @mixin easeOut($s) {
-    transition: $s ease-out;
+  transition: $s ease-out;
 }
 
 @mixin ease($s) {
-    transition: $s ease;
+  transition: $s ease;
 }
 
 @mixin transDelay($s) {
-    transition-delay: $s;
+  transition-delay: $s;
 }
 
 @mixin easeInOut($s) {
-    transition: $s ease-in-out;
+  transition: $s ease-in-out;
 }
 
 // Media Queries Mixins
 
-
-
 @mixin absoluteCenter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin menuOpen {
+  &.open {
+    .submenu {
+      visibility: visible;
+      z-index: 5;
+      opacity: 1;
+      transform: translateY(0);
+      @include easeOut(0.5s);
+    }
+  }
+}
+
+@mixin menuHovered {
+  &:hover {
+    .submenu {
+      visibility: visible;
+      z-index: 5;
+      opacity: 1;
+      transform: translateY(0);
+      @include easeOut(0.5s);
+    }
+  }
 }

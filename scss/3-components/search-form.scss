@@ -1,24 +1,25 @@
 .search-form {
-
-
-    &__input {
-        background-color: transparent;
-        border: 1px solid $color-primary--darkest;
-        border-radius: 1px;
-        padding: 0.8rem 5.5rem;
-        font-weight: 400;
-        font-family: $font-text;
-        font-size: 1.1rem;
-        color: $color-gray--dark;
-        width: 70%;
-        margin-bottom: 2rem;
+  &__input {
+    background-color: transparent;
+    border: 1px solid $color-primary--darkest;
+    border-radius: 1px;
+    padding: 0.8rem 5.5rem;
+    font-weight: 400;
+    font-family: $font-text;
+    font-size: 1.1rem;
+    color: $color-gray--dark;
+    width: 70%;
+    margin-bottom: 2rem;
+    @include easeOut(0.5s);
+    &:focus {
+      border: 1px solid $color-primary;
+      @include easeOut(0.5s);
     }
+  }
 
-    &__input::-webkit-input-placeholder {
-        font-family: $font-text;
-        font-weight: 700;
-        font-size: 0.8rem;
-    }
-
-
+  &__input::-webkit-input-placeholder {
+    font-family: $font-text;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
 }

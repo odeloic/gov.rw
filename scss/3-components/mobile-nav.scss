@@ -1,30 +1,37 @@
 .mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  transition: all 0.3s ease;
+
+  &.is-visible {
+    transform: translate(0);
+  }
+
+  @include respond(medium) {
+    transform: translate3d(100%, 0, 0);
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex: 1;
-    transition: all .3s ease;
+    // display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    background-color: $color-primary--darkest;
+    z-index: 1000;
+  }
 
-    &.is-visible {
-        transform: translate(0);
-    }
+  @include respond(small) {
+    width: 80%;
+    transform: translate3d(100%, 0, 0);
+  }
 
-    @include respond(medium) {
-        transform: translate3d(100%, 0, 0);
-        display: flex;
-        // display: none;
-        flex-direction: column;
-        position: fixed;
-        right: 0;
-        top: 0;
-        height: 100%;
-        width: 40%;
-        background-color: $color-primary--darkest;
-        z-index: 1000;
+  .menu {
+    &__item {
+      &--with-submenu {
+      }
     }
-
-    @include respond(small) {
-        width: 80%;
-        transform: translate3d(100%, 0, 0);
-    }
+  }
 }

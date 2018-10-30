@@ -15,8 +15,6 @@ html {
   }
 }
 
-
-
 body {
   -webkit-font-smoothing: antialiased;
 }
@@ -24,8 +22,6 @@ body {
 .white {
   color: $color-white;
 }
-
-
 
 a {
   text-decoration: none;
@@ -36,4 +32,10 @@ a {
 
 .text-centerd {
   text-align: center;
+}
+
+.m-top {
+  @include respond(medium) {
+    margin-top: 70px;
+  }
 }
