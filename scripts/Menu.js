@@ -17,8 +17,7 @@ if (w >= 1024) {
   });
 } else {
   menuWithSubmenu.forEach(menu => {
-    menu.addEventListener("click", e => {
-      e.preventDefault();
+    menu.addEventListener("click", () => {
       menu.classList.toggle("open");
     });
   });
